@@ -1,7 +1,5 @@
-What do you want to learn?
+I would like to learn more about CSS, Less, Sass, HTML(5), JavaScript, jQuery, other JavaScript libraries.
 
-We hope to tailor this course to meet your needs and goals. This is a chance to let us know about any specific techniques or interactions that you would like to learn.
-Write a paragraph or two about why you are taking this course and what you hope to learn.
-Include URLs to any websites that have you fascinated and describe why.
+I'd also like to learn good design and UX/UI practices. 
 
-
+I'm taking the course to learn more about front end web development so I can get a job as a web developer.   
