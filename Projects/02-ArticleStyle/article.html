@@ -1,35 +1,47 @@
 <!DOCTYPE HTML>
-  <html lang="en"> 
+  <html lang="en">
     <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <title>Aboriginal Australians</title>
-      <link rel="stylesheet" type="text/css" href="_assets\styles\style.css">
+      <!--
+      	- URLs should use forward slashes.
+      	- I also moved this relative to the document, the _assets directory will be where I update material
+      -->
+      <link rel="stylesheet" type="text/css" href="styles/style.css">
     </head>
     <body>
     <div class="content">
     <article>
+      <!--
+      	Tab structure is important for readability
+      -->
       <section>
-      <h1>Aboriginal Australians</h1>
-      
+     	<h1>Aboriginal Australians</h1>
         <p>From Wikipedia, the free encyclopedia</p>
         <hr>
         <p id="list_title">Contents</p>
-          <ol><li><a href="#legal">Legal and administrative definitions</a>  
-            <ol>
-              <li><a href="#aboriginal">Definitions from Aboriginal Australians</a></li>
-              <li><a href="#academia">Definitions from academia</a></li>
-            </ol>
+          <ol>
+          	<li>
+          	  <a href="#legal">Legal and administrative definitions</a>
+		  	  <ol>
+              	<li><a href="#aboriginal">Definitions from Aboriginal Australians</a></li>
+			  	<li><a href="#academia">Definitions from academia</a></li>
+			  </ol>
             </li>
-              <li><a href="#origins">Origins</a></li>
-              <li><a href="#groups">Groups of Aboriginal Australians</a></li>
-            <ol>
-              <li><a href="#names">Names used by Australian Aboriginal people</a></li>
-            </ol>
+            <li><a href="#origins">Origins</a></li>
+            <li>
+              <!--
+              	Nested lists must be children of a list element
+              -->
+              <a href="#groups">Groups of Aboriginal Australians</a>
+              <ol>
+                <li><a href="#names">Names used by Australian Aboriginal people</a></li>
+              </ol>
             </li>
         </ol>
         </section>
         <section>
-        <hr>
+          <hr>
           <h2 id="legal">Legal and administrative definitions</h2>
           <p>The category &quot;Aboriginal Australians&quot; was coined by the British after they began colonising Australia in 1788, to refer collectively to all people they found already inhabiting the continent, and later to the descendants of any of those people. Until the 1980s, the sole legal and administrative criterion for inclusion in this category was race.</p>
           <blockquote>&quot;In the era of colonial and post-colonial government, access to basic human rights depended upon your race. If you were a &quot;full blooded Aboriginal native ... [or] any person apparently having an admixture of Aboriginal blood&quot;, a half-caste being the &quot;offspring of an Aboriginal mother and other than Aboriginal father&quot; (but not of an Aboriginal father and other than Aboriginal mother), a &quot;quadroon&quot;, or had a &quot;strain&quot; of Aboriginal blood you were forced to live on Reserves or Missions, work for rations, given minimal education, and needed governmental approval to marry, visit relatives or use electrical appliances.&quot;</blockquote>
@@ -79,4 +91,8 @@
         </section>
       </article>
     </div>
-  </html>
+  <!--
+  	Always need a closing body tag
+  -->
+  </body>
+</html>

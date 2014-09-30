@@ -7,13 +7,27 @@
           margin-top: 0px;
           margin-bottom: 0px;
         } */
-        ul li:before{ content:"-"; position:relative; left:-15px;}
-        ul li{ text-indent:-5px; }
+
+		/*
+			Tab structure and proper formating helps with readability
+		*/
+
+        ul li:before {
+        	content: "-";
+        	position:relative;
+        	left: -15px;
+        }
+
+        ul li {
+          text-indent: -5px;
+        }
+
         a {
           color: #930;
         }
+
         article {
-          margin: 0 auto;          
+          margin: 0 auto;
           background-color: #fff;
           width: 775px;
           padding-left: 100px;
@@ -36,13 +50,16 @@
         body {
           background-color: #666;
         }
-
-        h1 h2 h3 {
+		/*
+			you must comma separate elements, unless you meant for these to be nested
+		*/
+        h1, h2, h3 {
           font-family: "Georgia";
           font-weight: bold;
           line-height: 1;
         }
-        h2 h3 {
+
+        h2, h3 {
           color: #333;
         }
 
@@ -62,7 +79,7 @@
           text-transform: uppercase;
           color: #999;
         }
-        
+
         h1 {
           font-size: 42px;
           color: #930;
