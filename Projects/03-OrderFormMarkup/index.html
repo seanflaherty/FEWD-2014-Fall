@@ -1,82 +1,96 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Form</title>
-</head>
-<body>
-  <form>
-    <h1>Order Form</h1>
-    <table border="1" cellpadding="10px" width="4px">
-      <tr>
-        <th>Description</th>
-        <th>Price</th>
-        <th>Quantity</th>
-      </tr>
-      <tr>
-        <td>Item 1</td>
-        <td>$9.99</td>
-        <td>
-          <input type="text">
-        </td>
-      </tr>
-      <tr>
-        <td>Item 2</td>
-        <td>$19.99</td>
-        <td>
-          <input type="text">
-        </td>
-      </tr>
-      <tr>
-        <td>Item 3</td>
-        <td>$29.99</td>
-        <td>
-          <input type="text">
-        </td>
-      </tr>
-    </table>
-    <h2>Customer Information</h2>
-    <fieldset>
-      <legend>Name</legend>
-      First Name
-      <br>
-      <input type="text" name="firstName" id="firstName">
-      <br>Last Name
-      <br>
-      <input type="text" name="lastName" id="lastName">
-    </fieldset>
-    <br>
-    <fieldset>
-      <legend>Address</legend>
-      Street Address
-      <br>
-      <input type="text" name="street" id="street">
-      <br>City
-      <br>
-      <input type="text" name="city" id="city">
-      <br>State
-      <br>
-      <select name="state" id="state">
-        <option value="select">Please Select a State</option>
-        <option value="delaware">Delaware</option>
-        <option value="maryland">Maryland</option>
-        <option value="virginia">Virginia</option>
-      </select>
-      <br>Zip
-      <br>
-      <input type="text" name="zip" id="zip">
-    </fieldset>
-    <br>
-    <fieldset>
-      <legend>Contact</legend>
-      Email
-      <br>
-      <input type="text" name="email" id="email">
-      <br>Phone
-      <br>
-      <input type="text" name="phone" id="phone">
-    </fieldset>
-    <input type="submit" value="Submit Order" name="submit" id="submit">
-  </form>
-</body>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Form</title>
+	</head>
+	<body>
+		<form>
+			<h1>Order Form</h1>
+			<table border="1" cellpadding="10px" width="4px">
+				<tr>
+					<th>Description</th>
+					<th>Price</th>
+					<th>Quantity</th>
+				</tr>
+				<tr>
+					<td>Item 1</td>
+					<td>$9.99</td>
+					<td>
+						<!--
+							Always name your inputs to ensure the data gets submitted
+						-->
+						<input type="text" name="prod_1">
+					</td>
+				</tr>
+				<tr>
+					<td>Item 2</td>
+					<td>$19.99</td>
+					<td>
+						<input type="text" name="prod_2">
+					</td>
+				</tr>
+				<tr>
+					<td>Item 3</td>
+					<td>$29.99</td>
+					<td>
+						<input type="text" name="prod_3">
+					</td>
+				</tr>
+			</table>
+			<h2>Customer Information</h2>
+			<fieldset>
+				<legend>Name</legend>
+				<!--
+					Labels help with accesibility, you can also add the for attribtue to link them to thier input
+				-->
+				<label for="firstName">First Name</label>
+				<br>
+				<input type="text" name="firstName" id="firstName">
+				<br>
+				<label for="lastName">Last Name</label>
+				<br>
+				<input type="text" name="lastName" id="lastName">
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Address</legend>
+				<label for="street">Street Address</label>
+				<br>
+				<input type="text" name="street" id="street">
+				<br>
+				<label for="city">City</label>
+				<br>
+				<input type="text" name="city" id="city">
+				<br>
+				<label for="state">State</label>
+				<br>
+				<select name="state" id="state">
+					<option value="select">Please Select a State</option>
+					<option value="delaware">Delaware</option>
+					<option value="maryland">Maryland</option>
+					<option value="virginia">Virginia</option>
+				</select>
+				<br>
+				<label for="zip">Zip</label>
+				<br>
+				<input type="text" name="zip" id="zip">
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Contact</legend>
+				<label for="email">Email</label>
+				<br>
+				<input type="text" name="email" id="email">
+				<br>
+				<label for="phone">Phone</label>
+				<br>
+				<input type="text" name="phone" id="phone">
+			</fieldset>
+			<input type="submit" value="Submit Order" name="submit" id="submit">
+		</form>
+	</body>
+	<!--
+		Don't forget the closing html tag
+	-->
+</html>
