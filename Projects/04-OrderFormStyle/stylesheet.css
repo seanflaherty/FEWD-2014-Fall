@@ -1,0 +1,119 @@
+article {
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 50px 100px 50px 100px;
+  width: 600px;
+}
+
+body {
+  background-color: #CADFEA;
+
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #0085B2;
+  font-size: 24px;
+  line-height: 1;
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  color: #0085B2;
+  line-height: 1;
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+legend {
+    font-family: "Helvetica", sans-serif;
+}
+
+td {
+  color: #666666;
+  line-height: 1;
+  font-family: "Helvetica";
+  font-size: 16px;
+  border-bottom: 1px solid #C5DFEB;
+  margin-top:20;
+}
+
+table {
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: #C5DFEB;
+  border-collapse:collapse;
+  color: #0085B2;
+  line-height: 1;
+  font-family: "Helvetica";
+  font-size: 11px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+
+#firstName {
+  display: inline-block;
+  float: left;
+  clear: left;
+  font-family: "Helvetica", sans-serif;
+  text-transform: uppercase;
+}
+
+#lastName {
+  display: inline-block;
+  float: right;
+  clear: right;
+  font-family: "Helvetica", sans-serif;
+  text-transform: uppercase;
+}
+
+#street {
+  display: inline-block;
+  float: left;
+  font-family: "Helvetica", sans-serif;
+  text-transform: uppercase;
+}
+
+#city {
+  display: inline-block;
+  float: left;
+  clear:left;
+  font-family: "Helvetica", sans-serif;
+  text-transform: uppercase;
+}
+
+#state {
+  display: inline-block;
+  font-family: "Helvetica", sans-serif;
+  text-transform: uppercase;
+}
+#zip {
+  display: inline-block;
+  font-family: "Helvetica", sans-serif;
+  text-transform: uppercase;
+}
+
+#email {
+  display: inline-block;
+  font-family: "Helvetica", sans-serif;
+  text-transform: uppercase;
+}
+
+#phone {
+  display: inline-block;
+  font-family: "Helvetica", sans-serif;
+  text-transform: uppercase;
+}

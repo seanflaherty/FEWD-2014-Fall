@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Form</title>
+</head>
+
+<body>
+  <article>
+    <form>
+      <h1>Order Form</h1>
+      <table>
+        <tr>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>Item 1</td>
+          <td>$9.99</td>
+          <td>
+            <input type="text">
+          </td>
+        </tr>
+        <tr>
+          <td>Item 2</td>
+          <td>$19.99</td>
+          <td>
+            <input type="text">
+          </td>
+        </tr>
+        <tr>
+          <td>Item 3</td>
+          <td>$29.99</td>
+          <td>
+            <input type="text">
+          </td>
+        </tr>
+      </table>
+      <h2>Customer Information</h2>
+      <fieldset class="customer-info">
+        <legend>Name</legend>
+        <label id="firstName">
+          First
+          <br>
+          <input type="text" name="firstName">
+        </label>
+        <label id="lastName">
+          Last
+          <br>
+          <input type="text" name="lastName">
+        </label>
+      </fieldset>
+      <br>
+      <fieldset class="address">
+        <legend>Address</legend>
+        <label id="street">
+          Street
+          <br>
+          <input type="text" name="street">
+        </label>
+        <br>
+        <br>
+        <label id="city">
+          <br>City
+          <br>
+          <input type="text" name="city" id="city">
+        </label>
+        <label id="state">
+          <br>State
+          <br>
+          <select name="state" id="state">
+            <option value="select">Select</option>
+            <option value="delaware">Delaware</option>
+            <option value="maryland">Maryland</option>
+            <option value="virginia">Virginia</option>
+          </select>
+        </label>
+        <label id="zip">
+          <br>Zip
+          <br>
+          <input type="text" name="zip" id="zip">
+        </label>
+      </fieldset>
+      <br>
+      <fieldset class="contact">
+        <legend>Contact</legend>
+        <label id="email">
+          Email
+          <br>
+          <input type="text" name="email" id="email">
+        </label>
+        <label id="phone">
+          <br>Phone
+          <br>
+          <input type="text" name="phone" id="phone">
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit Order" name="submit" id="submit">
+    </form>
+  </article>
+</body>
