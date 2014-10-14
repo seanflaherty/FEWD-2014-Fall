@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <title>Grid Systems</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fs.gridlock.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body class="gridlock">
+
+  <div class="logo_wrapper">
+    <header class="row logo_container">
+      <div class="mobile-full tablet-full desktop-full max-11 centered logo_cell">
+        <h1 class="logo">Grinders Coffee Co.</h1>
+      </div>
+    </header>
+  </div>
+
+  <section class="row sectioned_margined">
+    <div class="mobile-full tablet-4 tablet-push-1 desktop-8 max-6 centered text_centered">
+      <h2 class="heading heading_one">We Are Grinders Coffee Co.</h2>
+      <p class="intro_text">Grinders is where people gather to experience the true spirit of generosity. This is not a term we use lightly, and it's what keeps our customers coming back for more.</p>
+    </div>
+  </section>
+
+  <div class="menu_wrapper">
+    <section class="row">
+      <div class="mobile-full tablet-full desktop-10 max-8 centered menu_container">
+        <h2 class="heading heading_two menu_heading text_centered">Coffee Bar</h2>
+        <ul class="row menu_list">
+          <li class="mobile-full tablet-half desktop-half menu_item">Pour-Over Coffee 3.5</li>
+          <li class="mobile-full tablet-half desktop-half menu_item">Cold Brew Iced Coffee 3.5</li>
+          <li class="mobile-full tablet-half desktop-half menu_item menu_item_last_desktop">French Press to share 7</li>
+          <li class="mobile-full tablet-half desktop-half menu_item menu_item_last_desktop menu_item_last_mobile">Chemex to share 7</li>
+        </ul>
+        <h2 class="heading heading_two menu_heading text_centered">Espresso Bar</h2>
+        <ul class="row menu_list">
+          <li class="mobile-full tablet-half desktop-half menu_item">Espresso 2.5</li>
+          <li class="mobile-full tablet-half desktop-half menu_item">Cappuccino 3.75</li>
+          <li class="mobile-full tablet-half desktop-half menu_item">Latte 4</li>
+          <li class="mobile-full tablet-half desktop-half menu_item">Mocha 4.5</li>
+          <li class="mobile-full tablet-half desktop-half menu_item">Macchiato 3</li>
+          <li class="mobile-full tablet-half desktop-half menu_item">Americano 3.5</li>
+          <li class="mobile-full tablet-half desktop-half menu_item">Maple Macchiato 3.5</li>
+          <li class="mobile-full tablet-half desktop-half menu_item">Honey Macchiato 5</li>
+          <li class="mobile-full tablet-half desktop-half menu_item menu_item_last_desktop">Cajita Latte 5</li>
+          <li class="mobile-full tablet-half desktop-half menu_item menu_item_last_desktop menu_item_last_mobile">Chai 4</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <section class="row sectioned_margined">
+    <div class="mobile-full tablet-half desktop-push-right-2 max-3 max-push-right-3 right">
+      <img src="images/interior.jpg" alt="" class="location_image">
+    </div>
+    <div class="min-full mobile-2 tablet-half desktop-4 desktop-push-2 max-3 max-push-3">
+      <h3 class="heading heading_three">Hours &amp; Location</h3>
+      <p>
+        Open 7am - 5pm, 7 days a Week
+      </p>
+      <p>
+        410-509-8010
+      </p>
+      <p>
+        Grinders Coffee Co.
+        <br>4511 W 31st St.
+        <br>Baltimore, MD 21232
+      </p>
+    </div>
+    <div class="mobile-full tablet-half right desktop-4 desktop-push-2 max-3 max-push-3">
+      <input type="button" value="GetDirections">
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <footer class="footer_wrapper">
+    <div class="row">
+      <div class="mobile-full tablet-full desktop-4 centered">
+        <h4 class="footer_icon">Grinders Coffee Co.</h4>
+
+      </div>
+      <div class="mobile-full tablet-half desktop-4 right">
+        <ul class="footer_list">
+          <li class="footer_list_item">
+            <a href="#">Twitter</a>
+          </li>
+          <li class="footer_list_item">
+            <a href="#">Facebook</a>
+          </li>
+          <li class="footer_list_item">
+            <a href="#">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-full tablet-half desktop-4">
+        <p>
+          &copy; 2014 Grinders Coffee Co.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    var GridlockBookmarkletConfig = {
+      useCookies: true,
+      position: "bottom-left"
+    };
+    (function() {
+      if (typeof GridlockBookmarklet == 'undefined') {
+        document.body.appendChild(document.createElement('script')).src = 'http://formstone.it/js/gridlock.bookmarklet.js';
+      } else {
+        GridlockBookmarklet();
+      }
+    })();
+  </script>
+</body>
+
+</html>

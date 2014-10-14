@@ -1,0 +1,249 @@
+/* Global */
+
+body {
+  color: #666;
+	font-family: Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+}
+.button {
+	border: 3px solid #241915;
+	color: #241915;
+	display: block;
+	float: left;
+	margin: 10px 0 0;
+	padding: 10px 25px;
+	text-decoration: none;
+	}
+
+/* Helpers */
+
+.text_centered {
+	text-align: center;
+}
+
+.section_margined {
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
+
+/* Headings */
+.header {
+  color: #241915;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  line-height: 1;
+  height: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.heading_one {
+  font-size: 32px;
+}
+
+.heading_two {
+  font-size: 28px;
+  color: #60381C;
+}
+
+.heading_three {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* Logo / Header */
+
+.logo_wrapper {
+	margin-bottom: 50px;
+}
+
+.logo_container {
+	height: 250px;
+	position: relative;
+	color: #fff;
+}
+
+/* Not needed? SCF */
+.logo_cell {
+  height: 200px;
+  position: relative;
+  background: #241915 url(../images/beans.jpg) repeat center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+
+.logo {
+  width: 271px;
+  height: 103px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/logo.png);
+  display: block;
+  margin: auto;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+/* Intro */
+
+.intro_text {
+	font-size: 18px;
+}
+
+/* Menu */
+
+.menu {
+  background: #F6F6F6;
+}
+
+.menu_list {
+	margin-top: 0;
+	margin-bottom: 50px;
+	padding: 0;
+}
+
+.menu_item {
+	border-bottom: 1px solid #ccc;
+	list-style: none;
+	padding: 10px 0;
+}
+
+.menu_item_last_mobile {
+	border: none;
+}
+
+.menu_price {
+	color: #999;
+	float: right;
+}
+
+/* Location */
+
+.location_image {
+	width: 100%;
+}
+
+/* Footer */
+
+.footer_wrapper {
+	background: #241915;
+	color: #fff;
+	font-size: 13px;
+	padding: 50px 0;
+	text-transform: uppercase;
+}
+
+.footer_wrapper a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer_icon {
+	width: 45px;
+	height: 45px;
+
+	background: url(../images/icon.png);
+	display: block;
+	margin: 0 auto 20px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+.footer_list {
+	padding: 0;
+}
+
+.footer_list_item {
+	display: inline-block;
+	list-style: none;
+	margin: 0 10px;
+}
+
+.footer_list_item:before {
+	content: '';
+}
+
+/* Mobile Only */
+@media screen and (max-width: 739px) {
+	.logo_wrapper {
+		background: #241915 url(../images/beans.jpg) repeat center;
+	}
+
+	.menu_wrapper {
+		background: #f6f6f6;
+		padding: 50px 0;
+	}
+
+	.footer_wrapper {
+		text-align: center;
+	}
+}
+
+
+/* Tablet */
+@media screen and (min-width: 740px) {
+	.section_margined {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+
+	.logo_container {
+		height: 400px;
+
+		background: #241915 url(../images/beans.jpg) repeat center;
+		margin-top: 50px;
+	}
+
+	.menu_container {
+		background: #f6f6f6;
+		padding: 50px 0;
+	}
+
+	.menu_list {
+		padding: 0 50px;
+	}
+
+	.menu_item_last_desktop {
+		border: none;
+	}
+
+	.footer_icon {
+		margin: 0 auto -45px;
+	}
+
+	.footer_list {
+		float: right;
+	}
+
+	.footer_list_item {
+		float: left;
+		margin: 0 0 0 20px;
+	}
+}
+
+
+/* Desktop */
+@media screen and (min-width: 980px) {
+	.logo_container {
+		height: 500px;
+	}
+
+	.gridlock .row .desktop-push-right-2 {
+		margin-right: 17.7083%;
+	}
+}
+
+
+/* Max */
+@media screen and (min-width: 1220px) {
+	.gridlock .row .max-push-right-3 {
+		margin-right: 26.0417%;
+	}
+}
