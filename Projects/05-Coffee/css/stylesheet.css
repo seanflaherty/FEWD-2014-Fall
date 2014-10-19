@@ -2,10 +2,11 @@
 
 body {
   color: #666;
-	font-family: Helvetica, sans-serif;
-	font-size: 15px;
-	line-height: 1.5;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
 }
+
 .button {
 	border: 3px solid #241915;
 	color: #241915;
@@ -28,16 +29,14 @@ body {
 }
 
 /* Headings */
-.header {
-  color: #241915;
+
+.heading{
+  color: #261913;
   font-family: Georgia, serif;
   font-weight: normal;
   line-height: 1;
-  height: 500px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  position: relative;
 }
+
 .heading_one {
   font-size: 32px;
 }
@@ -64,16 +63,6 @@ body {
 	color: #fff;
 }
 
-/* Not needed? SCF */
-.logo_cell {
-  height: 200px;
-  position: relative;
-  background: #241915 url(../images/beans.jpg) repeat center;
-  color: #fff;
-  margin-bottom: 50px;
-}
-
-
 .logo {
   width: 271px;
   height: 103px;
@@ -98,14 +87,14 @@ body {
 
 /* Menu */
 
-.menu {
-  background: #F6F6F6;
-}
-
 .menu_list {
 	margin-top: 0;
 	margin-bottom: 50px;
 	padding: 0;
+}
+
+.menu_list_last {
+  margin-bottom: 0;
 }
 
 .menu_item {
@@ -167,7 +156,14 @@ body {
 }
 
 .footer_list_item:before {
+  background: #fff;
+  border-radius: 100%;
 	content: '';
+  /* SCF add more stuff here */
+}
+
+.footer_list_item_first {
+  
 }
 
 /* Mobile Only */
@@ -210,7 +206,7 @@ body {
 		padding: 0 50px;
 	}
 
-	.menu_item_last_desktop {
+	.menu_item_last {
 		border: none;
 	}
 
