@@ -43,7 +43,7 @@ body {
 
 .heading_two {
   font-size: 28px;
-  color: #60381C;
+  color: #6D381C;
 }
 
 .heading_three {
@@ -159,11 +159,15 @@ body {
   background: #fff;
   border-radius: 100%;
 	content: '';
-  /* SCF add more stuff here */
+  float: left;
+  display: block;
+  height: 4px;
+  width: 4px;
+  margin: 7px 22px 0 0;
 }
 
 .footer_list_item_first {
-  
+  display: none;
 }
 
 /* Mobile Only */
