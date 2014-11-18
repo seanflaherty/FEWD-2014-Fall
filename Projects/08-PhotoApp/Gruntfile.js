@@ -1,6 +1,7 @@
 /*global module:false*/
 module.exports = function(grunt) {
 
+
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		meta: {
@@ -29,12 +30,19 @@ module.exports = function(grunt) {
 		watch: {
 			css: {
 				files: [ 'css/*', '!css/*.min.css' ],
-				tasks: [ 'cssmin' ]
+				tasks: [ 'concat:css' ]
 			},
 			js: {
 				files: [ 'js/*', '!js/*.min.js' ],
 				tasks: [ 'uglify' ]
 			}
+		},
+		//Concat
+		concat: {
+			css: {
+				files: '<%= pkg.css %>'
+			}
+
 		}
 	});
 
@@ -42,8 +50,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 
-	// Default task.
-	grunt.registerTask('default', [ 'uglify', 'cssmin' ]);
+	// Production
+	grunt.registerTask('production', [ 'uglify', 'cssmin' ]);
+
+	// Alias watch to development
+	grunt.registerTask('development', [ 'watch' ]);
 
 };

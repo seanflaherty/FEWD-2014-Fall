@@ -7,6 +7,7 @@ font-family: 'Roboto', sans-serif;
 /* Global */
 
 body {
+    background-color: LightGray;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     font-size: 20px;
     line-height: 1.6;
@@ -25,9 +26,10 @@ a {
 .button {
 	background: #000;
     border-radius: 3px;
-	color: #fff;
+	background-color: #ffffff;
 	display: block;
-    font-size: 14px;
+    color: #E77E04;
+    font-size: 20px;
 	padding: 10px 30px;
     text-align: center;
 	text-transform: uppercase;
@@ -50,6 +52,7 @@ a {
     color: #2b3f4c;
     font-size:  30px;
     line-height: 1;
+    padding-top: 20px
     text-decoration: none;
 }
 
@@ -61,8 +64,13 @@ a {
     margin: 0 15px 0 0;
     vertical-align: middle;
     width:60px;
-
 }
+
+.logo_container {
+    background-color: White;
+}
+
+
 
 /* Intro */
 
@@ -116,20 +124,114 @@ a {
     font-size: 70px;
 }
 
+/* Features */
+.features {
+    background-color: White;
+}
+
+.features-title {
+    color: #E77E04;
+    font-family: "Roboto Condensed";
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+}
+
+.features-title.cloud:before {
+    background: url(../images/icon_sprite.png) no-repeat -80px -120px;
+    content: '';
+    content: '';
+    display: block;
+    height: 65px;
+    margin: 0 15px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    width:75px;
+}
+
+.features-title.photo:before {
+    background: url(../images/icon_sprite.png) no-repeat -160px -120px;
+    content: '';
+    content: '';
+    display: block;
+    height: 65px;
+    margin: 0 15px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    width:75px;
+}
+
+.features-title.tag:before {
+    background: url(../images/icon_sprite.png) no-repeat -0px -120px;
+    content: '';
+    content: '';
+    display: block;
+    height: 65px;
+    /* margin: 0 15px 0 0; */
+    margin-left: auto;
+    margin-right: auto
+    vertical-align: middle;
+    width:75px;
+}
+
+.features-text {
+    color: #777777;
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Gallery */
+.gallery {
+    background-color: Gray;
+}
+
+.gallery_image {
+    border:10px;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.gallery_image img {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.gallery-text {
+    color: #777777
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px 0 30px;
+    vertical-align: middle;
+}
+
+.gallery-title {
+    color: #2B3F4C;
+    font-family: "Roboto Condensed";
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1;
+    vertical-align: middle;
+}
+
 /* Apps */
 .apps_list_item {
     list-style: none;
 }
 
-/* Gallery Image */
-.gallery_image img {
-    width: 100%;
+/* Download */
+.download {
+    bacground-color: White;
 }
 
-/* Download */
 .download_button {
 	background: #000 url(../images/icon_sprite.png) no-repeat;
-	height: 55px;
+	color: #E77E04;
+    height: 55px;
 	margin: 0 0 10px;
 	text-indent: 200%;
 	white-space: nowrap;
@@ -147,9 +249,65 @@ a {
 	background-position: center -320px;
 }
 
+.download-text {
+    color: #777777;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0 30px;
+    text-align: center;
+}
+.download-title {
+    color: #E77E04;
+    font-family: "Roboto Condensed";
+    font-size: 42px;
+    line-height: 1;
+    text-align: center;
+}
+
 /* Footer */
 .footer_list_item {
+    font-size: 16px;
+    line-height: 1.5;
     list-style: none;
+    white-space:nowrap;
+}
+
+.footer_list_item.facebook {
+    background: url(../images/icon_sprite.png) no-repeat -80px 0;
+    content: '';
+    display: inline-block;
+    height: 60px;
+    margin: 0 15px 0 0;
+    vertical-align: middle;
+    width:40px;
+}
+
+.footer_list_item.google {
+    background: url(../images/icon_sprite.png) no-repeat -160px 0;
+    content: '';
+    display:inline-block;
+    height: 60px;
+    margin: 0 15px 0 0;
+    vertical-align: middle;
+    width:40px;
+}
+
+.footer_list_item.twitter {
+    background: url(../images/icon_sprite.png) no-repeat -120px 0;
+    content: '';
+    display: inline-block;
+    height: 60px;
+    margin: 0 15px 0 0;
+    vertical-align: middle;
+    width:40px;
+}
+
+.copyright {
+    color: #777777;
+}
+
+.footer_support {
+    color: #2B3F4C;
 }
 
 /* Mobile Only */
